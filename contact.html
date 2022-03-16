@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubantu&display=swap
+    ">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Merriweather:ital,wght@1,300&display=swap');
+    *{
+        cursor: pointer;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sidebar {
+        width: 330px;
+        background-color: rgb(212, 248, 248);
+        font-size: 23px;
+        height: 100vh;
+        font-family: 'Ubantu', sans-serif;
+    }
+
+
+    .sidebar a {
+        text-decoration: none;
+        display: block;
+        padding: 24px;
+        color: black;
+    }
+
+    .main {
+        background-color: rgb(219, 219, 218);
+        width: 86vw;
+    }
+
+    .container {
+        display: flex;
+
+    }
+
+    .devcontainer {
+        /* background-color: pink; */
+        height: 40vh;
+        width: 80vw;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pic img {
+        height: 40vh;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .hello {
+        font-size: 62px;
+    }
+
+    .name {
+        font-size: 50px;
+
+        font-weight: bold;
+    }
+
+    .about {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .button button {
+        padding: 6px;
+        border-radius: 16px;
+        color: white;
+        background-color: rgb(105, 104, 103);
+        cursor: pointer;
+
+    }
+
+    .moreabout {
+        font-size: 20px;
+    }
+
+    .contactform {
+        font-family: 'Ubantu', sans-serif;
+        margin-top: 100px;
+        margin-left: 64px;
+
+    }
+
+    .contactform form input {
+        border: 2px solid black;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .contactform form div {
+
+        padding: 5px 1px;
+    }
+
+    .contactform form button {
+        border-radius: 12px;
+        padding: 4px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .contactform form button:hover {
+        background-color: cornflowerblue;
+
+    }
+
+    #clientemail,
+    #number {
+        width: 200px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <a href="/responsive_web/index.html">Home</a>
+                    <a href="/responsive_web/intro.html">Intro</a>
+                    <a href="/responsive_web/service.html">Services</a>
+                    <a href="/responsive_web/blog.html">Blog</a>
+                    <a href="/responsive_web/contact.html">Contact </a>
+                </ul>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="contactform">
+                <h2>Contact me for any inquiry</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="inputemail" class="form-label">Email Adress :</label>
+                        <input type="email" id="clientemail" aria-describedby="emailHelp">
+                        <div class="emailhelp">We'll never share your email with anyone</div>
+
+                        <div class="mb-4">
+                            <label for="clientphone" class="form-label">Phone :</label>
+                            <input type="number" id="number">
+                            <div class="emailhelp">We'll never share your email with anyone</div>
+
+
+                            <input type="checkbox" class="form-label1" id="isclient">
+                            <div class="mb-3 checkbox">
+                                <label for="isclient" class="form-label2">I want you to work on project</label>
+
+                            </div>
+                            <button class="submit">submit</button>
+                        </div>
+                </form>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

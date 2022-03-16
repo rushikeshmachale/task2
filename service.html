@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Merriweather:ital,wght@1,300&display=swap');
+    *{
+        cursor: pointer;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 330px;
+        background-color: rgb(212, 248, 248);
+        font-size: 23px;
+        height: 100vh;
+        font-family: 'Ubantu', sans-serif;
+    }
+
+
+    .sidebar a {
+        text-decoration: none;
+        display: block;
+        padding: 24px;
+        color: black;
+    }
+
+    .main {
+        background-color: rgb(219, 219, 218);
+        width: 86vw;
+    }
+
+    .container {
+        display: flex;
+
+    }
+
+    .devcontainer {
+        /* background-color: pink; */
+        height: 40vh;
+        width: 80vw;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pic img {
+        height: 40vh;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .hello{
+        font-size: 62px;
+    }
+    .name{
+        font-size: 50px;
+        
+        font-weight: bold;
+    }
+    .about{
+        font-size: 30px;
+    }
+    .button{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .button button{
+        padding: 6px;
+        border-radius: 16px;
+        color: white;
+        background-color: rgb(105, 104, 103);
+        cursor: pointer;
+
+    }
+    .moreabout{
+        font-size: 20px;
+    }
+   
+    .hamburger img{
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        padding: 0px 45px;
+        cursor: pointer;
+        
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+          
+            <nav>
+                <ul>
+                    <a href="/responsive_web/index.html">Home</a>
+                    <a href="/responsive_web/intro.html">Intro</a>
+                    <a href="/responsive_web/service.html">Services</a>
+                    <a href="/responsive_web/blog.html">Blog</a>
+                    <a href="/responsive_web/contact.html">Contact </a>
+                </ul>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="devcontainer">
+                <div class="info">
+                    <div class="hello">Hi I am
+                    </div>
+                    <div class="name">Rushi Machale
+                    </div>
+                    <div class="about">Web Developer, Student
+                    </div>
+                    <div class="moreabout">
+                        Hi I am developer and I love to drink cold-drinks. I live in Pune and I love to visit on Forts.
+                    </div>
+                    <div class="button">
+                        <button>Download CV</button>
+                        <button>Contact me</button>
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="/20210729_163821.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Merriweather:ital,wght@1,300&display=swap');
+    *{
+        cursor: pointer;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 330px;
+        background-color: rgb(212, 248, 248);
+        font-size: 23px;
+        height: 100vh;
+        font-family: 'Ubantu', sans-serif;
+        transition: transform 0.3s ease-in;
+    }
+
+
+    .sidebar a {
+        text-decoration: none;
+        display: flex;
+        padding: 24px;
+        color: black;
+    }
+
+    .main {
+        background-color: rgb(250, 245, 245);
+        width: 86vw;
+        padding: 15px;
+    }
+
+
+    .container {
+        display: flex;
+
+    }
+
+    .devcontainer {
+        height: 40vh;
+        width: 80vw;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pic img {
+        height: 40vh;
+    }
+    .info img{
+        margin-left: 80%;
+        height: 200px;
+        width: 120px;
+        margin-top: 11%;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .hello {
+        font-size: 62px;
+    }
+
+    .name {
+        font-size: 50px;
+
+        font-weight: bold;
+    }
+
+    .about {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .button button:hover {
+        background-color: blue;
+    }
+
+    .button button {
+        padding: 6px;
+        border-radius: 16px;
+        color: white;
+        background-color: rgb(105, 104, 103);
+        cursor: pointer;
+
+    }
+
+    .moreabout {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .hamburger li {
+        cursor: pointer;
+    }
+
+    .ham1 {
+        height: 4px;
+        margin: 1px;
+        width: 18px;
+        background-color: black;
+    }
+
+    .ham2 {
+        height: 4px;
+        margin: 3px 1px;
+        width: 18px;
+        background-color: black;
+    }
+
+    .ham3 {
+        margin: 2px 1px;
+        height: 4px;
+        width: 18px;
+        background-color: black;
+    }
+
+    .cross {
+        height: 27px;
+        position: absolute;
+        top: 0;
+        /* margin: 0px 189px; */
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .ham {
+        height: 12px;
+        width: 12%;
+    }
+
+  
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <a href="/responsive_web/index.html">Home</a>
+                    <a href="/responsive_web/intro.html">Intro</a>
+                    <a href="/responsive_web/service.html">Services</a>
+                    <a href="/responsive_web/blog.html">Blog</a>
+                    <a href="/responsive_web/contact.html">Contact </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+            </div>
+            <div class="devcontainer">
+                <div class="info">
+                    <img src="/responsive_web/rushi.jpg" alt="">
+                    <div class="hello">Hi I am
+                    </div>
+                    <div class="name">Rushi Machale
+                    </div>
+                    <div class="about">Web Developer, Student
+                    </div>
+                    <div class="moreabout">
+                        Hi I am developer and I love to drink cold-drinks. I live in Pune and I love to visit on Forts.
+                    </div>
+                    <div class="button">
+                        <a href="/cv.txt" target="_blank">
+                            <button>Download CV</button></a>
+                        <a href="/contact.html">
+                            <button>Contact me</button></a>
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="/download.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

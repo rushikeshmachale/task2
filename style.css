@@ -1,0 +1,13 @@
+@media(max-width: 1080px){
+    *{
+        /* background-color: red; */
+    }
+    .sidebar{
+        
+        transform: translate(-332px,0px);
+        position: absolute;
+    }
+    .pic{
+        display: none;
+    }
+}

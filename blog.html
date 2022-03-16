@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="        https://fonts.googleapis.com/css?family=Ubantu&display=swap
+    ">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Merriweather:ital,wght@1,300&display=swap');
+    *{
+        cursor: pointer;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 330px;
+        background-color: rgb(212, 248, 248);
+        font-size: 23px;
+        height: 100vh;
+        font-family: 'Ubantu', sans-serif;
+    }
+
+
+    .sidebar a {
+        text-decoration: none;
+        display: block;
+        padding: 24px;
+        color: black;
+    }
+
+    .main {
+        background-color: rgb(219, 219, 218);
+        width: 86vw;
+    }
+
+    .container {
+        display: flex;
+
+    }
+
+    .devcontainer {
+        /* background-color: pink; */
+        height: 40vh;
+        width: 80vw;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pic img {
+        height: 40vh;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .hello {
+        font-size: 62px;
+    }
+
+    .name {
+        font-size: 50px;
+
+        font-weight: bold;
+    }
+
+    .about {
+        font-size: 30px;
+    }
+
+    .button {
+        background-color: rgb(12, 92, 241);
+        border-radius: 16px;
+        font-size: 16px;
+        color: cornsilk;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .button:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+    .moreabout {
+        font-size: 20px;
+    }
+    .blogitem h2{
+        font-family: 'Ubantu', sans-serif;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <a href="/responsive_web/index.html">Home</a>
+                    <a href="/responsive_web/intro.html">Intro</a>
+                    <a href="/responsive_web/service.html">Services</a>
+                    <a href="/responsive_web/blog.html">Blog</a>
+                    <a href="/responsive_web/contact.html">Contact </a>
+                </ul>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="blogcontainer">
+                <h1>Blogs by rushi</h1>
+                <div class="blogitem">
+                    <h2>Learn java</h2>
+                    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+                    <button class="button">Read More</button>
+                </div>
+                <div class="blogitem">
+                    <h2>learn Nodejs</h2>
+                    <p> It allows developers to use JavaScript, which is a programming language that allows users to build web applications.</p>
+                    <button class="button">Read More</button>
+                </div>
+                <div class="blogitem">
+                    <h2>Learn Python</h2>
+                    <p>Python is a high-level general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+                    <button class="button">Read More</button>
+                </div>
+               
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

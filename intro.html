@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Merriweather:ital,wght@1,300&display=swap');
+    *{
+        cursor: pointer;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 320px;
+        background-color: rgb(212, 248, 248);
+        font-size: 23px;
+        height: 150vh;
+        font-family: 'Ubantu', sans-serif;
+    }
+
+
+    .sidebar a {
+        text-decoration: none;
+        display: block;
+        padding: 24px;
+        color: black;
+    }
+
+    .main {
+        background-color: rgb(219, 219, 218);
+        width: 86vw;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+
+    }
+
+    .devcontainer {
+        /* background-color: pink; */
+        height: 40vh;
+        width: 80vw;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pic img {
+        height: 40vh;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .hello {
+        font-size: 62px;
+    }
+
+    .name {
+        font-size: 50px;
+
+        font-weight: bold;
+    }
+
+    .about {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .button button {
+        padding: 6px;
+        border-radius: 16px;
+        color: white;
+        background-color: rgb(105, 104, 103);
+        cursor: pointer;
+
+    }
+
+    .moreabout {
+        font-size: 20px;
+    }
+    .skill p{
+        background-color: green;
+        height: 10px;
+        width: 50%;
+    }
+    .skill1 p{
+        background-color: rgb(21, 224, 21);
+        height: 10px;
+        width: 40%;
+    }
+    .skill2 p{
+        background-color: rgb(117, 207, 33);
+        height: 10px;
+        width: 50%;
+    }
+    .skill3 p{
+        background-color: rgb(230, 243, 50);
+        height: 10px;
+        width: 30%;
+    }
+    .skill4 p{
+        background-color: rgb(111, 231, 55);
+        height: 10px;
+        width: 62%;
+    }
+    .std{
+        font-size: 40px;
+    }
+    .std li{
+        color: gray;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <a href="/responsive_web/index.html">Home</a>
+                    <a href="/responsive_web/intro.html">Intro</a>
+                    <a href="/responsive_web/service.html">Services</a>
+                    <a href="/responsive_web/blog.html">Blog</a>
+                    <a href="/responsive_web/contact.html">Contact </a>
+                </ul>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <h1>About me</h1>
+            <p>Hi, My name is rushikesh and I am student studying in JSPM college of Engineering and research Pune.Now I am studying the web development course. Now I am very happy because I have done this web development course.</p>
+            <h2>My Skills</h2>
+            <p></p>
+            <div class="skillcontainer">
+                <div class="skill">
+                    HTML <p></p>
+                </div>
+                <div class="skill1">
+                    CSS <p></p>
+                </div>
+                <div class="skill2">
+                    JavaScript <p></p>
+                </div>
+                <div class="skill3">
+                    Java <p></p>
+                </div>
+                <div class="skill4">
+                    Nodejs <p></p>
+                </div>
+                <div class="std">
+                    <ul>
+                        Hobbies
+                        <li>Cricket</li>
+                        <li>Swimming</li>
+                        <li>Tennis</li>
+                        <li>Game</li>
+                        <li>Bike Riding</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
